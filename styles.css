@@ -98,7 +98,7 @@ body {
 
 /* Botón sobre la imagen */
 .map-link.overlay {
-  position: absolute;
+  position: relative;
   bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
