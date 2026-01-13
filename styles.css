@@ -29,22 +29,6 @@ body {
   color: var(--text);
   line-height:1.7;
 }
-.rsvp-button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 14px 40px;
-  border: 1px solid #333;
-  text-decoration: none;
-  color: #333;
-  letter-spacing: 2px;
-  font-size: 13px;
-  transition: all 0.4s ease;
-}
-
-.rsvp-button:hover {
-  background: #333;
-  color: #fff;
-}
 
 /* TARJETA RSVP */
 .paper-card {
@@ -114,7 +98,7 @@ body {
 
 /* Botón sobre la imagen */
 .map-link.overlay {
-  position: absolute;
+  position: relative;
   bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
