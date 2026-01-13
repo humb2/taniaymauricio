@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tania & Mauricio | Boda Civil</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- COVER -->
+<div id="cover">
+  <div class="cover-content">
+    <h1 class="names">Tania & Mauricio</h1>
+    <div class="envelope" id="envelope" onclick="openInvitation()">
+      <div class="flap"></div>
+      <div class="open-text">ABRIR INVITACIÓN</div>
+    </div>
+  </div>
+</div>
+
+<!-- INVITATION -->
+<div id="invitation">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1 class="names">Tania & Mauricio</h1>
+      <div class="date">11 · ABRIL · 2026</div>
+      <div class="countdown">
+        <div><span id="days"></span>DÍAS</div>
+        <div><span id="hours"></span>HORAS</div>
+        <div><span id="minutes"></span>MIN</div>
+        <div><span id="seconds"></span>SEG</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAPER -->
+  <div class="paper">
+
+      <!-- SEPARADOR ELEGANTE -->
+<section>
+  <div class="graphic-separator1">
+    <img src="assets/separador-floral.png" alt="Separador floral">
+  </div>
+</section>
+
+    <!-- MÓDULO 1: Invitación -->
+    <section>
+  <div class="invitar1"><img src="assets/Invitar.png" alt="Separador floral">
+  </div>
+</section>
+
+    <!-- MÓDULO 2: Foto pareja -->
+    <section class="module" id="module2"><img src="images/foto_pareja1.jpeg" alt="Pareja">
+    </section>
+    <!-- SEPARADOR ELEGANTE -->
+<section>
+  <div class="graphic-separator2"><img src="assets/separador-floral.png" alt="Separador floral">
+  </div>
+</section>
+
+
+    <!-- MÓDULO 3: Lugar -->
+<section class="module" id="module3">
+  <div class="image-overlay"><img src="images/lugar2.jpg" alt="Lugar">
+
+    <a 
+      class="map-link overlay"
+      href="https://maps.app.goo.gl/WERZ4ExchAtmpv417"
+      target="_blank"
+    >
+      VER UBICACIÓN
+    </a>
+  </div>
+</section>
+
+<!-- SEPARADOR ELEGANTE -->
+<section>
+  <div class="graphic-separator"><img src="assets/separador-floral.png" alt="Separador floral">
+  </div>
+</section>
+
+
+    <!-- MÓDULO : TIEMPOS -->
+    <section class="module" id="module2"><img src="images/info3.jpg" alt="Pareja">
+    </section>
+
+  <!-- SEPARADOR ELEGANTE -->
+<section>
+  <div class="graphic-separator2"><img src="assets/separador-floral.png" alt="Separador floral">
+  </div>
+</section>
+
+    <!-- MÓDULO 4: RSVP -->
+<section class="module" id="module4">
+  <div class="paper-card">
+
+    <div class="subtitle">RSVP</div>
+    <h2>Confirmación</h2>
+    <div class="separator"></div>
+
+    <p>
+      Agradecemos confirmar su asistencia antes del<br>
+      <strong>20 de marzo de 2026</strong>
+    </p>
+
+<form 
+  id="rsvpForm"
+  action="https://formspree.io/f/meeoykol"
+  method="POST"
+>
+  <input 
+    type="text" 
+    name="nombre" 
+    placeholder="Nombre completo" 
+    required
+  >
+
+  <select name="asistencia" required>
+    <option value="">¿Asistirá?</option>
+    <option value="Sí">Sí</option>
+    <option value="No">No</option>
+  </select>
+
+  <select name="numero_invitados" id="numeroInvitados" required>
+  <option value="">Número de invitados</option>
+</select>
+<p class="invite-limit">
+  Invitación válida para <strong><span id="maxInvitadosText"></span> personas</strong>
+</p>
+
+
+  <button type="submit">CONFIRMAR ASISTENCIA</button>
+</form>
+<input type="hidden" name="invitado" id="guestName">
+
+    <div id="rsvpMessage" class="rsvp-message">
+      Gracias por confirmar 💖<br>
+      ¡Será un honor compartir este momento contigo!
+    </div>
+
+    <div id="rsvpClosed" class="rsvp-closed">
+      El periodo de confirmación ha finalizado.<br>
+      Para cualquier duda, favor de contactarnos.
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- SEPARADOR ELEGANTE -->
+<section>
+  <div class="graphic-separator2"><img src="assets/separador-floral.png" alt="Separador floral">
+  </div>
+</section>
+
+    <!-- MÓDULO 3: hospedaje -->
+<section class="module" id="module3"><div class="image-overlay"><img src="images/hospedaje.png" alt="Lugar">
+
+    <a 
+      class="map-link overlay"
+      href="https://maps.app.goo.gl/FBUYcQTGuFXcTV3M9"
+      target="_blank"
+    >
+      VER HOTELES
+    </a>
+  </div>
+</section>
+
+<!-- SEPARADOR ELEGANTE -->
+<section>
+  <div class="graphic-separator3"><img src="assets/separador-floral.png" alt="Separador floral">
+  </div>
+</section>
+
+    <!-- MÓDULO 5: Foto final + cuenta regresiva -->
+    <section class="module" id="module5"><img src="images/foto_pareja2.jpeg" alt="Pareja">
+      <div class="subtitle">Faltan:</div>
+      <div class="countdown" style="justify-content:center;">
+        <div><span id="days2"></span>DÍAS</div>
+        <div><span id="hours2"></span>HORAS</div>
+        <div><span id="minutes2"></span>MIN</div>
+        <div><span id="seconds2"></span>SEG</div>
+      </div>
+    </section>
+<section>
+    <footer>
+  <div class="footer1">
+    <img src="assets/footer.png" alt="Separador floral">
+  </div>
+    </footer>
+</section>    
+  </div>
+</div>
+
+<!-- MÚSICA -->
+<audio id="bgMusic" src="audio/Me_gustas_Joan_Sebastian.mp3" loop></audio>
+
+<script>
+// Abrir invitación
+function openInvitation() {
+  document.getElementById('envelope').classList.add('open');
+  setTimeout(() => {
+    document.getElementById('cover').classList.add('hidden');
+    document.getElementById('invitation').classList.add('visible');
+    document.getElementById('bgMusic').play();
+  }, 900);
+}
+
+// Primera cuenta regresiva
+const weddingDate = new Date('April 11, 2026 16:40:00').getTime();
+setInterval(() => {
+  const now = new Date().getTime();
+  const distance = weddingDate - now;
+  document.getElementById("days").innerText = Math.floor(distance / (1000*60*60*24));
+  document.getElementById("hours").innerText = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+  document.getElementById("minutes").innerText = Math.floor((distance % (1000*60*60)) / (1000*60));
+  document.getElementById("seconds").innerText = Math.floor((distance % (1000*60)) / 1000);
+}, 1000);
+
+// Segunda cuenta regresiva
+setInterval(() => {
+  const now = new Date().getTime();
+  const distance = weddingDate - now;
+  document.getElementById("days2").innerText = Math.floor(distance / (1000*60*60*24));
+  document.getElementById("hours2").innerText = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+  document.getElementById("minutes2").innerText = Math.floor((distance % (1000*60*60)) / (1000*60));
+  document.getElementById("seconds2").innerText = Math.floor((distance % (1000*60)) / 1000);
+}, 1000);
+
+// Animación de módulos al hacer scroll
+const modules = document.querySelectorAll('.module');
+function checkModules() {
+  const triggerBottom = window.innerHeight * 0.85;
+  modules.forEach(module => {
+    const moduleTop = module.getBoundingClientRect().top;
+    if(moduleTop < triggerBottom) module.classList.add('visible');
+  });
+}
+window.addEventListener('scroll', checkModules);
+window.addEventListener('load', checkModules);
+</script>
+<script>
+const rsvpDeadline = new Date("March 20, 2026 23:59:59").getTime();
+const now = new Date().getTime();
+
+const form = document.getElementById("rsvpForm");
+const message = document.getElementById("rsvpMessage");
+const closed = document.getElementById("rsvpClosed");
+
+if (now > rsvpDeadline) {
+  form.style.display = "none";
+  closed.style.display = "block";
+}
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  fetch(form.action, {
+    method: form.method,
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(response => {
+    if (response.ok) {
+      form.style.display = "none";
+      message.style.display = "block";
+    }
+  });
+});
+</script>
+<script>
+const params = new URLSearchParams(window.location.search);
+let maxInvitados = parseInt(params.get("max"));
+
+// Valores permitidos
+const permitidos = [2, 3, 4, 5];
+
+// Validación de seguridad
+if (!permitidos.includes(maxInvitados)) {
+  maxInvitados = 2; // valor por defecto
+}
+
+const selectInvitados = document.getElementById("numeroInvitados");
+
+// Crear opciones dinámicas
+for (let i = 1; i <= maxInvitados; i++) {
+  const option = document.createElement("option");
+  option.value = i;
+  option.textContent = i;
+  selectInvitados.appendChild(option);
+}
+document.getElementById("maxInvitadosText").textContent = maxInvitados;
+
+</script>
+<script>
+const params = new URLSearchParams(window.location.search);
+const guestName = params.get("name")?.replace(/_/g, " ") || "Invitado";
+
+document.getElementById("guestName").value = guestName;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,657 @@
+/* ================= FUENTE ================= */
+@font-face {
+  font-family: 'Philanthropy';
+  src: url('fonts/Allura-Regular.ttf') format('truetype');
+}
+.names {
+  font-family: 'Philanthropy', cursive;
+  font-size: 5.2rem;          /* más grande */
+  font-weight: 300;           /* suaviza visualmente */
+  letter-spacing: 0.05em;     /* hace que se vea más fina */
+  line-height: 1.1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ================= VARIABLES ================= */
+:root {
+  --bg: #F4F2EE;
+  --paper: #ffffff;
+  --text: #1C1C1C;
+  --accent: #B6A36A;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height:1.7;
+}
+.rsvp-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 40px;
+  border: 1px solid #333;
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 2px;
+  font-size: 13px;
+  transition: all 0.4s ease;
+}
+
+.rsvp-button:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* TARJETA RSVP */
+.paper-card {
+  background: #fff;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  box-shadow: 0 25px 60px rgba(0,0,0,.15);
+  border-radius: 14px;
+  text-align: center;
+  position: relative;
+}
+
+/* Inputs */
+.paper-card input,
+.paper-card select {
+  width: 100%;
+  padding: 14px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Botón */
+.paper-card button {
+  margin-top: 20px;
+  padding: 14px 40px;
+  border: 1px solid #333;
+  background: transparent;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.paper-card button:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Mensaje éxito */
+.rsvp-message {
+  display: none;
+  margin-top: 30px;
+  font-size: 15px;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* RSVP cerrado */
+.rsvp-closed {
+  display: none;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== IMAGEN CON BOTÓN OVERLAY ===== */
+.image-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+/* Botón sobre la imagen */
+.map-link.overlay {
+  position: absolute;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 34px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(4px);
+  transition: all 0.4s ease;
+}
+
+/* Hover elegante */
+.map-link.overlay:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+/* ===== SEPARADOR GRÁFICO AJUSTADO ===== */
+.graphic-separator {
+  display: flex;
+  justify-content: center;
+  position: relative; /* para poder ubicarlo sin afectar otros módulos */
+  top: -180px; 
+  margin-bottom: -250px;         /* lo sube sobre el módulo anterior */
+  pointer-events: none;
+  z-index: 1;   
+  width: 100%;        /* se asegura que quede sobre el fondo */
+}
+
+.graphic-separator img {
+  width: 60%;           /* se estira horizontalmente */
+  height: auto;          /* mantiene la proporción */
+  opacity: 0.6;
+  display: block;
+}
+.graphic-separator1 {
+  display: flex;
+  justify-content: center;
+  position: relative; /* para poder ubicarlo sin afectar otros módulos */
+  top: -100px; 
+  margin-bottom: -200px;         /* lo sube sobre el módulo anterior */
+  pointer-events: none;
+  z-index: 1;   
+  width: 100%;        /* se asegura que quede sobre el fondo */
+}
+
+.graphic-separator1 img {
+  width: 60%;           /* se estira horizontalmente */
+  height: auto;          /* mantiene la proporción */
+  opacity: 0.6;
+  display: block;
+}
+.graphic-separator2 {
+  display: flex;
+  justify-content: center;
+  position: relative; /* para poder ubicarlo sin afectar otros módulos */
+  top: -115px; 
+  margin-bottom: -150px;         /* lo sube sobre el módulo anterior */
+  pointer-events: none;
+  z-index: 1;   
+  width: 100%;        /* se asegura que quede sobre el fondo */
+}
+
+.graphic-separator2 img {
+  width: 60%;           /* se estira horizontalmente */
+  height: auto;          /* mantiene la proporción */
+  opacity: 0.6;
+  display: block;
+}
+.graphic-separator3 {
+  display: flex;
+  justify-content: center;
+  position: relative; /* para poder ubicarlo sin afectar otros módulos */
+  top: -145px; 
+  margin-bottom: -180px;         /* lo sube sobre el módulo anterior */
+  pointer-events: none;
+  z-index: 1;   
+  width: 100%;        /* se asegura que quede sobre el fondo */
+}
+
+.graphic-separator3 img {
+  width: 60%;           /* se estira horizontalmente */
+  height: auto;          /* mantiene la proporción */
+  opacity: 0.6;
+  display: block;
+}
+.invitar1 {
+  display: flex;
+  justify-content: center;
+  position: relative; /* para poder ubicarlo sin afectar otros módulos */
+  top: -100px; 
+  margin-bottom: -200px;         /* lo sube sobre el módulo anterior */
+  pointer-events: none;
+  z-index: 1;   
+  width: 100%;        /* se asegura que quede sobre el fondo */
+}
+
+.invitar1 img {
+  width: 70%;           /* se estira horizontalmente */
+  height: auto;          /* mantiene la proporción */
+  opacity: 1;
+  display: block;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: center;
+  position: relative; /* para poder ubicarlo sin afectar otros módulos */
+  top: -100px; 
+  margin-bottom: -150px;         /* lo sube sobre el módulo anterior */
+  pointer-events: none;
+  z-index: 1;   
+  width: 100%;        /* se asegura que quede sobre el fondo */
+}
+
+.footer1 img {
+  width: 70%;           /* se estira horizontalmente */
+  height: auto;          /* mantiene la proporción */
+  opacity: 1;
+  display: block;
+}
+/* ================= ANIMACIONES PARA FOTOS ================= */
+.module img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.module.visible img {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efecto zoom-in para la segunda foto (módulo 5) */
+#module5 img {
+  transform: scale(0.95);
+  transition: transform 1.2s ease, opacity 1.2s ease;
+}
+
+#module5.visible img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Ajustes para móviles */
+@media (max-width:600px) {
+  .module img {
+    max-width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+/* ================= COVER ================= */
+#cover {
+  position: fixed;
+  inset:0;
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url('images/cover.jpg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:20;
+  transition: opacity 1.2s ease;
+}
+
+#cover.hidden {
+  opacity:0;
+  pointer-events:none;
+}
+
+.cover-content { text-align:center; color:white; }
+
+.cover-content h1.names {
+  font-family: 'Philanthropy', cursive;
+  font-size:4rem;
+  margin-bottom:3rem;
+}
+
+/* ================= ENVELOPE ================= */
+.envelope {
+  width:280px;
+  height:180px;
+  background:#fff;
+  margin:auto;
+  position:relative;
+  cursor:pointer;
+  box-shadow:0 30px 60px rgba(0,0,0,.35);
+  transition: transform .5s ease, box-shadow .5s ease;
+  overflow:hidden;
+}
+
+.envelope:hover { transform: translateY(-6px); }
+
+.flap {
+  position:absolute; inset:0;
+  background: linear-gradient(135deg, transparent 50%, #f0f0f0 50%), linear-gradient(225deg, transparent 50%, #f0f0f0 50%);
+  background-size:50% 100%;
+  background-position:left top, right top;
+  background-repeat:no-repeat;
+  transform-origin: top center;
+  transition: transform 1.2s ease;
+}
+
+.open-text {
+  position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing:.35em;
+  font-size:.85rem;
+  color:#333;
+  transition: opacity .6s ease;
+}
+
+.envelope.open .flap { transform: rotateX(180deg); }
+.envelope.open .open-text { opacity:0; }
+
+/* ================= INVITATION ================= */
+#invitation {
+  opacity:0;
+  transform:translateY(40px);
+  filter:blur(10px);
+  transition: all 1.6s ease;
+}
+
+#invitation.visible { opacity:1; transform:translateY(0); filter:blur(0); }
+
+/* ================= HERO ================= */
+.hero {
+  min-height:100vh;
+  background: linear-gradient(rgba(255,255,255,.65), rgba(255,255,255,.65)), url('images/cover.jpg') center/cover no-repeat;
+  display:flex; align-items:center; justify-content:center;
+  text-align:center;
+}
+
+.hero h1.names {
+  font-size: 5.8rem;      /* más presencia */
+  letter-spacing: 0.1em; /* más aire entre letras */
+}
+.hero .date { letter-spacing:.35em; font-size:.85rem; margin-top:10px; }
+.countdown { margin-top:30px; display:flex; gap:28px; justify-content:center; font-size:.75rem; letter-spacing:.2em; }
+.countdown div span { display:block; font-size:1.6rem; font-family: 'Cormorant Garamond', serif; }
+
+/* ================= PAPER CON TEXTURA ================= */
+.paper {
+  max-width:820px;
+  margin:-120px auto 120px;
+  background: var(--paper);
+  padding:120px 60px;
+  box-shadow:0 40px 90px rgba(0,0,0,.15);
+  text-align:center;
+  background-image:url('https://www.transparenttextures.com/patterns/pw-maze-white.png');
+}
+
+/* ================= NUEVO TEXTO INVITACIÓN ================= */
+.paper .subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.paper h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.paper .details p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.6rem;
+}
+
+.paper .details strong { font-weight: 600; }
+
+.map-link { display:inline-block; margin-top:26px; letter-spacing:.25em; font-size:.75rem; text-decoration:none; color:var(--text); border-bottom:1px solid var(--accent); padding-bottom:6px; }
+
+/* ================= GALERÍA ================= */
+.gallery { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:24px; }
+.gallery img { width:100%; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,.2); }
+
+/* ================= RSVP ================= */
+form { max-width:380px; margin:auto; }
+input, select { width:100%; border:none; border-bottom:1px solid #ccc; padding:12px 4px; margin-bottom:10px; background:transparent; }
+button { width:100%; border:1px solid var(--accent); padding:14px; background:transparent; letter-spacing:.25em; cursor:pointer; }
+
+/* ================= MÓDULOS INTERACTIVOS ================= */
+.module {
+  margin-bottom:80px;
+  opacity:0;
+  transform:translateY(40px);
+  transition: all 1s ease;
+}
+
+.module.visible {
+  opacity:1;
+  transform:translateY(0);
+}
+/* ================= MÓDULOS: IMÁGENES ================= */
+.module img {
+  width: 100%;           /* ocupa el ancho del container */
+  max-width: 600px;      /* ancho máximo en escritorio */
+  height: auto;          /* mantiene proporción */
+  display: block;
+  margin: 0 auto 40px;   /* centrado y espacio inferior */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  transition: transform 0.5s ease; /* para efecto hover opcional */
+}
+
+.module img:hover {
+  transform: scale(1.02); /* ligero zoom al pasar el mouse */
+}
+
+/* ================= AJUSTES PARA MÓVILES ================= */
+@media (max-width:600px) {
+  .module img {
+    max-width: 90%;  /* se adapta al ancho de pantallas pequeñas */
+    margin-bottom: 30px;
+  }
+}
+
+/* ================= FOOTER ================= */
+footer { font-family:'Cormorant Garamond', serif; letter-spacing:.18em; margin-bottom:100px; }
+
+@media (max-width:600px) {
+  .hero h1.names { font-size:2.8rem; }
+  .paper { padding:80px 28px; margin-top:10px; }
+}
+/* ================= FUENTE ================= */
+@font-face {
+  font-family: 'Philanthropy';
+  src: url('fonts/Philanthropy.ttf') format('truetype');
+}
+
+/* ================= VARIABLES ================= */
+:root {
+  --bg: #F4F2EE;
+  --paper: #ffffff;
+  --text: #1C1C1C;
+  --accent: #B6A36A;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height:1.7;
+}
+
+/* ================= COVER ================= */
+#cover {
+  position: fixed;
+  inset:0;
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url('images/cover.jpg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:20;
+  transition: opacity 1.2s ease;
+}
+
+#cover.hidden {
+  opacity:0;
+  pointer-events:none;
+}
+
+.cover-content { text-align:center; color:white; }
+
+.cover-content h1.names {
+  font-family: 'Philanthropy', cursive;
+  font-size:5rem;
+  letter-spacing: 0.08em;
+  margin-bottom:3rem;
+}
+
+@media (max-width:600px) {
+  .names {
+    font-size: 3.2rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* ================= ENVELOPE ================= */
+.envelope {
+  width:280px;
+  height:180px;
+  background:#fff;
+  margin:auto;
+  position:relative;
+  cursor:pointer;
+  box-shadow:0 30px 60px rgba(0,0,0,.35);
+  transition: transform .5s ease, box-shadow .5s ease;
+  overflow:hidden;
+}
+
+.envelope:hover { transform: translateY(-6px); }
+
+.flap {
+  position:absolute; inset:0;
+  background: linear-gradient(135deg, transparent 50%, #f0f0f0 50%), linear-gradient(225deg, transparent 50%, #f0f0f0 50%);
+  background-size:50% 100%;
+  background-position:left top, right top;
+  background-repeat:no-repeat;
+  transform-origin: top center;
+  transition: transform 1.2s ease;
+}
+
+.open-text {
+  position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing:.35em;
+  font-size:.85rem;
+  color:#333;
+  transition: opacity .6s ease;
+}
+
+.envelope.open .flap { transform: rotateX(180deg); }
+.envelope.open .open-text { opacity:0; }
+
+/* ================= INVITATION ================= */
+#invitation {
+  opacity:0;
+  transform:translateY(40px);
+  filter:blur(10px);
+  transition: all 1.6s ease;
+}
+
+#invitation.visible { opacity:1; transform:translateY(0); filter:blur(0); }
+
+/* ================= HERO ================= */
+.hero {
+  min-height:100vh;
+  background: linear-gradient(rgba(255,255,255,.65), rgba(255,255,255,.65)), url('images/cover.jpg') center/cover no-repeat;
+  display:flex; align-items:center; justify-content:center;
+  text-align:center;
+}
+
+.hero h1.names { font-family: 'Philanthropy', cursive; font-size:4.5rem; }
+.hero .date { letter-spacing:.35em; font-size:.85rem; margin-top:10px; }
+
+.countdown { margin-top:30px; display:flex; gap:28px; justify-content:center; font-size:.75rem; letter-spacing:.2em; }
+.countdown div span { display:block; font-size:1.6rem; font-family: 'Cormorant Garamond', serif; }
+
+/* ================= PAPER CON TEXTURA ================= */
+.paper {
+  max-width:820px;
+  margin:-120px auto 120px;
+  background: var(--paper);
+  padding:120px 60px;
+  box-shadow:0 40px 90px rgba(0,0,0,.15);
+  text-align:center;
+  background-image:url('https://www.transparenttextures.com/patterns/pw-maze-white.png');
+}
+
+/* ================= NUEVO TEXTO INVITACIÓN ================= */
+.paper .subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.paper h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.paper .details p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.6rem;
+}
+
+.paper .details strong { font-weight: 600; }
+
+.map-link { display:inline-block; margin-top:26px; letter-spacing:.25em; font-size:.75rem; text-decoration:none; color:var(--text); border-bottom:1px solid var(--accent); padding-bottom:6px; }
+
+/* ================= GALERÍA ================= */
+.gallery { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:24px; }
+.gallery img { width:100%; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,.2); }
+
+/* ================= RSVP ================= */
+form { max-width:380px; margin:auto; }
+input, select { width:100%; border:none; border-bottom:1px solid #ccc; padding:12px 4px; margin-bottom:10px; background:transparent; }
+button { width:100%; border:1px solid var(--accent); padding:14px; background:transparent; letter-spacing:.25em; cursor:pointer; }
+
+/* ================= MÓDULOS INTERACTIVOS ================= */
+.module {
+  margin-bottom:80px;
+  opacity:0;
+  transform:translateY(40px);
+  transition: all 1s ease;
+}
+
+.module.visible {
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ================= FOOTER ================= */
+footer { font-family:'Cormorant Garamond', serif; letter-spacing:.18em; margin-bottom:100px; }
+
+@media (max-width:600px) {
+  .hero h1.names { font-size:2.8rem; }
+  .paper { padding:80px 28px; margin-top:-80px; }
+}
+.graphic-separator1,
+.graphic-separator {
+  padding: 20px 0;      /* espacio arriba y abajo */
+  text-align: center;   /* centra la imagen */
+}
+.graphic-separator1 img,
+.graphic-separator img {
+  display: block;
+  max-width: 100%;
+}
