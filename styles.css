@@ -96,7 +96,6 @@ body {
   max-width: 600px;
   margin: 0 auto 40px;
 }
-
 .image-overlay img {
   width: 100%;
   height: auto;
@@ -104,7 +103,6 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,.2);
 }
-
 /* ===== BOTÓN SOBRE LA IMAGEN ===== */
 .map-link.overlay {
   position: absolute;
@@ -123,17 +121,15 @@ body {
   transition: all 0.4s ease;
   z-index: 2;
 }
-
 /* Hover elegante */
 .map-link.overlay:hover {
   background: #fff;
   color: #000;
 }
-
 /* ===== AJUSTE MÓVIL ===== */
 @media (max-width:600px) {
   .map-link.overlay {
-    bottom: 16px;
+    bottom: 20px;
     padding: 12px 28px;
     font-size: 11px;
   }
@@ -409,11 +405,6 @@ body {
 .paper .details strong { font-weight: 600; }
 
 .map-link { display:inline-block; margin-top:26px; letter-spacing:.25em; font-size:.75rem; text-decoration:none; color:var(--text); border-bottom:1px solid var(--accent); padding-bottom:6px; }
-
-/* ================= GALERÍA ================= */
-.gallery { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:24px; }
-.gallery img { width:100%; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,.2); }
-
 
 /* ================= MÓDULOS INTERACTIVOS ================= */
 .module {
