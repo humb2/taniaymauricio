@@ -139,13 +139,12 @@ body {
   }
 }
 
-
 /* ===== SEPARADOR GRÁFICO AJUSTADO ===== */
 .graphic-separator {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -200px; 
+  top: -100px; 
   margin-bottom: -250px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
