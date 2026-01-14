@@ -141,7 +141,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -150px; 
+  top: -80px; 
   margin-bottom: -120px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
