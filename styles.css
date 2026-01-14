@@ -142,7 +142,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: -40 0 6px;
+  margin: 10 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -178,7 +178,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: -40 0 6px;
+  margin: 10 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -195,7 +195,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: -40 0 6px;
+  margin: 10 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -212,7 +212,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: -40 0 6px;
+  margin: 10 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -228,7 +228,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: -40 0 6px;
+  margin: 10 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -245,7 +245,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: -40 0 6px;
+  margin: 10 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -261,7 +261,7 @@ body {
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
   top: 1px; 
-  margin: -40 0 6px;         /* lo sube sobre el módulo anterior */
+  margin: 10 0 6px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
