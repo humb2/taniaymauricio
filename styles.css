@@ -141,8 +141,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: -20 0 6px;
+  margin: -60 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
