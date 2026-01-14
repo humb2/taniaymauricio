@@ -141,7 +141,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: 1px; 
+  top: -60px; 
   margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
@@ -176,7 +176,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: 1px; 
+  top: -60px; 
   margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
@@ -193,7 +193,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: 1px; 
+  top: -60px; 
   margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
@@ -210,7 +210,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: 1px; 
+  top: -60px; 
   margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
@@ -227,7 +227,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: 1px; 
+  top: -60px; 
   margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
@@ -244,7 +244,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: 1px; 
+  top: -60px; 
   margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
@@ -261,8 +261,8 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -20px; 
-  margin-bottom: -150px;         /* lo sube sobre el módulo anterior */
+  top: 1px; 
+  margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -539,7 +539,6 @@ body {
     letter-spacing: 0.1em;
   }
 }
-
 
 /* ================= FOOTER ================= */
 footer { font-family:'Cormorant Garamond', serif; letter-spacing:.18em; margin-bottom:100px; }
