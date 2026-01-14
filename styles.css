@@ -146,7 +146,7 @@ body {
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
   top: -100px; 
-  margin-bottom: -250px;         /* lo sube sobre el módulo anterior */
+  margin-bottom: -100px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -196,7 +196,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -80px; 
+  top: 5px; 
   margin-bottom: -180px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
