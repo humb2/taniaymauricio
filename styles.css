@@ -140,8 +140,8 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -50px; 
-  margin-bottom: -100px;         /* lo sube sobre el módulo anterior */
+  top: -100px; 
+  margin-bottom: -200px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -199,6 +199,40 @@ body {
 }
 
 .graphic-separator3 img {
+  width: 60%;           /* se estira horizontalmente */
+  height: auto;          /* mantiene la proporción */
+  opacity: 0.6;
+  display: block;
+}
+.graphic-separator4 {
+  display: flex;
+  justify-content: center;
+  position: relative; /* para poder ubicarlo sin afectar otros módulos */
+  top: -80px; 
+  margin-bottom: -150px;         /* lo sube sobre el módulo anterior */
+  pointer-events: none;
+  z-index: 1;   
+  width: 100%;        /* se asegura que quede sobre el fondo */
+}
+
+.graphic-separator4 img {
+  width: 60%;           /* se estira horizontalmente */
+  height: auto;          /* mantiene la proporción */
+  opacity: 0.6;
+  display: block;
+}
+.graphic-separator5 {
+  display: flex;
+  justify-content: center;
+  position: relative; /* para poder ubicarlo sin afectar otros módulos */
+  top: -80px; 
+  margin-bottom: -150px;         /* lo sube sobre el módulo anterior */
+  pointer-events: none;
+  z-index: 1;   
+  width: 100%;        /* se asegura que quede sobre el fondo */
+}
+
+.graphic-separator5 img {
   width: 60%;           /* se estira horizontalmente */
   height: auto;          /* mantiene la proporción */
   opacity: 0.6;
