@@ -136,6 +136,23 @@ body {
 }
 
 /* ===== SEPARADOR GRÁFICO AJUSTADO ===== */
+.invitar1 {
+  display: flex;
+  justify-content: center;
+  position: relative; /* para poder ubicarlo sin afectar otros módulos */
+  top: -100px; 
+  margin-bottom: -200px;         /* lo sube sobre el módulo anterior */
+  pointer-events: none;
+  z-index: 1;   
+  width: 100%;        /* se asegura que quede sobre el fondo */
+}
+
+.invitar1 img {
+  width: 70%;           /* se estira horizontalmente */
+  height: auto;          /* mantiene la proporción */
+  opacity: 1;
+  display: block;
+}
 .graphic-separator {
   display: flex;
   justify-content: center;
@@ -238,24 +255,6 @@ body {
   opacity: 0.6;
   display: block;
 }
-.invitar1 {
-  display: flex;
-  justify-content: center;
-  position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -100px; 
-  margin-bottom: -200px;         /* lo sube sobre el módulo anterior */
-  pointer-events: none;
-  z-index: 1;   
-  width: 100%;        /* se asegura que quede sobre el fondo */
-}
-
-.invitar1 img {
-  width: 70%;           /* se estira horizontalmente */
-  height: auto;          /* mantiene la proporción */
-  opacity: 1;
-  display: block;
-}
-
 .footer1 {
   display: flex;
   justify-content: center;
