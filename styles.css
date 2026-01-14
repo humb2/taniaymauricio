@@ -140,9 +140,9 @@ body {
 .graphic-separator {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -60px; 
-  margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
+  margin: -40 0 20px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -150,6 +150,7 @@ body {
 
 .graphic-separator img {
   width: 60%;           /* se estira horizontalmente */
+  max-width: 420px;
   height: auto;          /* mantiene la proporción */
   opacity: 0.6;
   display: block;
@@ -175,9 +176,9 @@ body {
 .graphic-separator1 {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -60px; 
-  margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
+  margin: -40 0 20px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -192,9 +193,9 @@ body {
 .graphic-separator2 {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -60px; 
-  margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
+  margin: -40 0 20px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -209,14 +210,13 @@ body {
 .graphic-separator3 {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -60px; 
-  margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
+  margin: -40 0 20px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
 }
-
 .graphic-separator3 img {
   width: 60%;           /* se estira horizontalmente */
   height: auto;          /* mantiene la proporción */
@@ -226,9 +226,9 @@ body {
 .graphic-separator4 {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -60px; 
-  margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
+  margin: -40 0 20px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -241,16 +241,15 @@ body {
   display: block;
 }
 .graphic-separator5 {
-  display: flex;
+ display: flex;
   justify-content: center;
+  align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -60px; 
-  margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
+  margin: -40 0 20px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
 }
-
 .graphic-separator5 img {
   width: 60%;           /* se estira horizontalmente */
   height: auto;          /* mantiene la proporción */
