@@ -90,19 +90,28 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== IMAGEN CON BOTÓN OVERLAY ===== */
+/* ===== CONTENEDOR IMAGEN + BOTÓN ===== */
 .image-overlay {
   position: relative;
-  display: inline-block;
+  max-width: 600px;
+  margin: 0 auto 40px;
 }
 
-/* Botón sobre la imagen */
+.image-overlay img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+}
+
+/* ===== BOTÓN SOBRE LA IMAGEN ===== */
 .map-link.overlay {
   position: absolute;
-  bottom: 80px;
+  bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 12px 34px;
+  padding: 14px 36px;
   border: 1px solid #fff;
   color: #fff;
   text-decoration: none;
@@ -110,13 +119,24 @@ body {
   letter-spacing: 2px;
   background: rgba(0,0,0,0.35);
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   transition: all 0.4s ease;
+  z-index: 2;
 }
 
 /* Hover elegante */
 .map-link.overlay:hover {
   background: #fff;
   color: #000;
+}
+
+/* ===== AJUSTE MÓVIL ===== */
+@media (max-width:600px) {
+  .map-link.overlay {
+    bottom: 16px;
+    padding: 12px 28px;
+    font-size: 11px;
+  }
 }
 
 
