@@ -179,7 +179,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -115px; 
+  top: 5px; 
   margin-bottom: -150px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
@@ -196,7 +196,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: 5px; 
+  top: -100px; 
   margin-bottom: -180px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
