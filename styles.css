@@ -145,7 +145,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -180px; 
+  top: -100px; 
   margin-bottom: -250px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
@@ -179,7 +179,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -60px; 
+  top: -115px; 
   margin-bottom: -150px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
@@ -196,7 +196,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -145px; 
+  top: -80px; 
   margin-bottom: -180px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
