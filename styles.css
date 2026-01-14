@@ -108,7 +108,7 @@ body {
 /* ===== BOTÓN SOBRE LA IMAGEN ===== */
 .map-link.overlay {
   position: absolute;
-  bottom: 32px;
+  bottom: 26px;
   left: 50%;
   transform: translateX(-50%);
   padding: 14px 36px;
@@ -178,7 +178,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: -115px; 
+  top: -130px; 
   margin-bottom: -150px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
