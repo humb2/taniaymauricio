@@ -134,127 +134,50 @@ body {
     font-size: 11px;
   }
 }
+/* RESET CLAVE PARA iOS */
+section {
+  margin: 0;
+  padding: 0;
+}
 
-/* ===== SEPARADOR GRÁFICO AJUSTADO ===== */
-
+/* ===== SEPARADOR FLORAL ESTABLE ===== */
 .graphic-separator {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 6 0 6px;
+
+  margin: 6px 0 4px;
+  width: 100%;
   pointer-events: none;
-  z-index: 1;   
-  width: 100%;        /* se asegura que quede sobre el fondo */
 }
 
 .graphic-separator img {
-  width: 60%;           /* se estira horizontalmente */
+  width: 60%;
   max-width: 420px;
-  height: auto;          /* mantiene la proporción */
-  opacity: 0.6;
+  height: auto;
   display: block;
-}
-.invitar1 {
- display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 6 0 6px;
-  pointer-events: none;
-  z-index: 1;   
-  width: 100%;        /* se asegura que quede sobre el fondo */
+  opacity: 0.6;
 }
 
+/* INVITAR */
+.invitar1 {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0 6px;
+}
 
 .invitar1 img {
-  width: 70%;           /* se estira horizontalmente */
-  height: auto;          /* mantiene la proporción */
-  opacity: 1;
+  width: 70%;
+  height: auto;
   display: block;
 }
 
-.graphic-separator1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: 6 0 6px;
-  pointer-events: none;
-  z-index: 1;   
-  width: 100%;        /* se asegura que quede sobre el fondo */
+/* AJUSTE IMÁGENES PARA EVITAR ESPACIO FANTASMA */
+.module img {
+  margin-bottom: 4px;
 }
 
-.graphic-separator1 img {
-  width: 60%;           /* se estira horizontalmente */
-  height: auto;          /* mantiene la proporción */
-  opacity: 0.6;
-  display: block;
-}
-.graphic-separator2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: 6 0 6px;
-  pointer-events: none;
-  z-index: 1;   
-  width: 100%;        /* se asegura que quede sobre el fondo */
-}
 
-.graphic-separator2 img {
-  width: 60%;           /* se estira horizontalmente */
-  height: auto;          /* mantiene la proporción */
-  opacity: 0.6;
-  display: block;
-}
-.graphic-separator3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: 6 0 6px;
-  pointer-events: none;
-  z-index: 1;   
-  width: 100%;        /* se asegura que quede sobre el fondo */
-}
-.graphic-separator3 img {
-  width: 60%;           /* se estira horizontalmente */
-  height: auto;          /* mantiene la proporción */
-  opacity: 0.6;
-  display: block;
-}
-.graphic-separator4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: 6 0 6px;
-  pointer-events: none;
-  z-index: 1;   
-  width: 100%;        /* se asegura que quede sobre el fondo */
-}
-
-.graphic-separator4 img {
-  width: 60%;           /* se estira horizontalmente */
-  height: auto;          /* mantiene la proporción */
-  opacity: 0.6;
-  display: block;
-}
-.graphic-separator5 {
- display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: 6 0 6px;
-  pointer-events: none;
-  z-index: 1;   
-  width: 100%;        /* se asegura que quede sobre el fondo */
-}
-.graphic-separator5 img {
-  width: 60%;           /* se estira horizontalmente */
-  height: auto;          /* mantiene la proporción */
-  opacity: 0.6;
-  display: block;
-}
 .footer1 {
   display: flex;
   justify-content: center;
