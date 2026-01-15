@@ -141,7 +141,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: -120 0 6px;
+  margin: 6 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -155,15 +155,15 @@ body {
   display: block;
 }
 .invitar1 {
-  display: flex;
+ display: flex;
   justify-content: center;
-  position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  top: 1px; 
-  margin-bottom: 1px;         /* lo sube sobre el módulo anterior */
+  align-items: center;
+  margin: 6 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
 }
+
 
 .invitar1 img {
   width: 70%;           /* se estira horizontalmente */
@@ -177,7 +177,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: -80 0 6px;
+  margin: 6 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -194,7 +194,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: 10 0 6px;
+  margin: 6 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -211,7 +211,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: 10 0 6px;
+  margin: 6 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -227,7 +227,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: 10 0 6px;
+  margin: 6 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -244,7 +244,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
-  margin: 10 0 6px;
+  margin: 6 0 6px;
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -260,7 +260,7 @@ body {
   justify-content: center;
   position: relative; /* para poder ubicarlo sin afectar otros módulos */
   top: 1px; 
-  margin: 10 0 6px;         /* lo sube sobre el módulo anterior */
+  margin: 6 0 6px;         /* lo sube sobre el módulo anterior */
   pointer-events: none;
   z-index: 1;   
   width: 100%;        /* se asegura que quede sobre el fondo */
@@ -278,7 +278,7 @@ body {
   max-width: 600px;
   height: auto;
   display: block;
-  margin: 0 auto 40px;
+  margin: 0 auto 10px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,.2);
   opacity: 0;
@@ -441,7 +441,7 @@ body {
 
 /* ================= MÓDULOS INTERACTIVOS ================= */
 .module {
-  margin-bottom:80px;
+  margin-bottom:10px;
   opacity:0;
   transform:translateY(40px);
   transition: all 1s ease;
