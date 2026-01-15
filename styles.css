@@ -306,7 +306,7 @@ body {
 @media (max-width:600px) {
   .module img {
     max-width: 90%;
-    margin-bottom: 30px;
+    margin-bottom: 6px;
   }
 }
 
@@ -457,7 +457,7 @@ body {
   max-width: 600px;      /* ancho máximo en escritorio */
   height: auto;          /* mantiene proporción */
   display: block;
-  margin: 0 auto 40px;   /* centrado y espacio inferior */
+  margin: 0 auto 10px;   /* centrado y espacio inferior */
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,.2);
   transition: transform 0.5s ease; /* para efecto hover opcional */
@@ -471,7 +471,7 @@ body {
 @media (max-width:600px) {
   .module img {
     max-width: 90%;  /* se adapta al ancho de pantallas pequeñas */
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
