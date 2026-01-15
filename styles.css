@@ -482,28 +482,6 @@ footer { font-family:'Cormorant Garamond', serif; letter-spacing:.18em; margin-b
   .hero h1.names { font-size:2.8rem; }
   .paper { padding:80px 28px; margin-top:10px; }
 }
-/* ================= FUENTE ================= */
-@font-face {
-  font-family: 'Philanthropy';
-  src: url('fonts/Philanthropy.ttf') format('truetype');
-}
-
-/* ================= VARIABLES ================= */
-:root {
-  --bg: #F4F2EE;
-  --paper: #ffffff;
-  --text: #1C1C1C;
-  --accent: #B6A36A;
-}
-
-* { margin:0; padding:0; box-sizing:border-box; }
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height:1.7;
-}
 
 /* ================= COVER ================= */
 #cover {
@@ -536,12 +514,4 @@ body {
     font-size: 3.2rem;
     letter-spacing: 0.1em;
   }
-}
-
-/* ================= FOOTER ================= */
-footer { font-family:'Cormorant Garamond', serif; letter-spacing:.18em; margin-bottom:100px; }
-
-@media (max-width:600px) {
-  .hero h1.names { font-size:2.8rem; }
-  .paper { padding:80px 28px; margin-top:-80px; }
 }
