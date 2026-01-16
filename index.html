@@ -257,17 +257,24 @@ form.addEventListener("submit", function(e) {
 </script>
 <script>
 const params = new URLSearchParams(window.location.search);
+
+// ===============================
+// CONFIGURACIÓN INVITADOS
+// ===============================
 let maxInvitados = parseInt(params.get("max"));
 
 // Valores permitidos
 const permitidos = [2, 3, 4, 5];
 
-// Validación de seguridad
+// Seguridad
 if (!permitidos.includes(maxInvitados)) {
   maxInvitados = 2; // valor por defecto
 }
 
 const selectInvitados = document.getElementById("numeroInvitados");
+
+// Limpiar por si acaso
+selectInvitados.innerHTML = '<option value="">Número de invitados</option>';
 
 // Crear opciones dinámicas
 for (let i = 1; i <= maxInvitados; i++) {
@@ -276,13 +283,13 @@ for (let i = 1; i <= maxInvitados; i++) {
   option.textContent = i;
   selectInvitados.appendChild(option);
 }
+
 document.getElementById("maxInvitadosText").textContent = maxInvitados;
 
-const params = new URLSearchParams(window.location.search);
-const guestName = params.get("name")?.replace(/_/g, " ") || "Invitado";
-
+// ===============================
+// ORIGEN DEL LINK (FORMSpREE)
+// ===============================
 document.getElementById("origenLink").value = window.location.href;
-
 </script>
 
 
