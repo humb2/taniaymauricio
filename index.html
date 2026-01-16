@@ -120,8 +120,8 @@
 <p class="invite-limit">
   Invitación válida para <strong><span id="maxInvitadosText"></span> personas</strong>
 </p>
-<input type="hidden" name="invitado" id="guestName">
-<input type="hidden" name="origen" id="origenLink">
+  
+  <input type="hidden" name="origen" id="origenLink">
 
   <button type="submit">CONFIRMAR ASISTENCIA</button>
 </form>
@@ -278,14 +278,13 @@ for (let i = 1; i <= maxInvitados; i++) {
 }
 document.getElementById("maxInvitadosText").textContent = maxInvitados;
 
-</script>
-<script>
 const params = new URLSearchParams(window.location.search);
 const guestName = params.get("name")?.replace(/_/g, " ") || "Invitado";
 
 document.getElementById("origenLink").value = window.location.href;
-document.getElementById("guestName").value = guestName;
+
 </script>
+
 
 </body>
 </html>
